@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuggestionViewController">
+            <connections>
+                <outlet property="label" destination="IjC-yw-boX" id="cT0-id-JBz"/>
+                <outlet property="sugTextView" destination="AUA-1h-Zv2" id="WVW-ge-PAA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Qwe-Ic-ISd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xN-CU-MyE">
+                    <rect key="frame" x="229" y="264" width="91" height="39"/>
+                    <color key="backgroundColor" red="0.87967566289999999" green="0.87967566289999999" blue="0.87967566289999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="1" green="0.5" blue="0.0" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="cjB-RK-dVZ"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUA-1h-Zv2">
+                    <rect key="frame" x="20" y="75" width="280" height="154"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="insetFor6xAndEarlier" minX="-20" minY="-20" maxX="20" maxY="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="fBw-3e-pgK"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="感谢您的宝贵留言，这是我们成长的动力～" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjC-yw-boX">
+                    <rect key="frame" x="25" y="75" width="270" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.79020675510000005" green="0.79020675510000005" blue="0.79020675510000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AUA-1h-Zv2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="F5L-lC-gLS"/>
+                <constraint firstItem="AUA-1h-Zv2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Tn5-GO-nXM"/>
+                <constraint firstItem="1xN-CU-MyE" firstAttribute="top" secondItem="AUA-1h-Zv2" secondAttribute="bottom" constant="40" id="eF3-wC-zXn"/>
+                <constraint firstAttribute="trailing" secondItem="1xN-CU-MyE" secondAttribute="trailing" id="kf5-nZ-bwJ"/>
+                <constraint firstAttribute="trailing" secondItem="AUA-1h-Zv2" secondAttribute="trailing" constant="20" id="rXW-NS-FGs"/>
+                <constraint firstAttribute="centerX" secondItem="IjC-yw-boX" secondAttribute="centerX" id="zfG-uk-uam"/>
+            </constraints>
+            <connections>
+                <action selector="backgroundTap:" destination="-1" eventType="touchUpInside" id="UTG-R5-UOy"/>
+            </connections>
+            <point key="canvasLocation" x="367" y="335"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

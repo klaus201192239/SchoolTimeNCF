@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ManagerActivityDetailViewController">
+            <connections>
+                <outlet property="myTableView" destination="vwv-qb-MCy" id="1NB-jU-dr1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vwv-qb-MCy">
+                    <rect key="frame" x="0.0" y="64" width="320" height="475"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="PxG-cO-cKO"/>
+                        <outlet property="delegate" destination="-1" id="e0x-ha-Kax"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJG-eO-SEw">
+                    <rect key="frame" x="0.0" y="540" width="320" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="CxV-Oa-Kfz"/>
+                    </constraints>
+                    <state key="normal" image="kaishidiaming.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startSignIn:" destination="-1" eventType="touchUpInside" id="7IF-Zx-aqy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vwv-qb-MCy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bdb-JP-CP3"/>
+                <constraint firstAttribute="bottom" secondItem="XJG-eO-SEw" secondAttribute="bottom" id="aer-3Z-9LD"/>
+                <constraint firstAttribute="trailing" secondItem="XJG-eO-SEw" secondAttribute="trailing" id="czb-0S-2cl"/>
+                <constraint firstItem="XJG-eO-SEw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qoA-46-oZb"/>
+                <constraint firstAttribute="trailing" secondItem="vwv-qb-MCy" secondAttribute="trailing" id="tV9-4F-hbC"/>
+            </constraints>
+            <point key="canvasLocation" x="323" y="344"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kaishidiaming.png" width="1000" height="120"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

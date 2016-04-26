@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ExamineTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="membe1.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQ3-HI-kzH">
+                        <rect key="frame" x="8" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="Xhb-kz-lDQ"/>
+                            <constraint firstAttribute="width" constant="45" id="fEp-fO-WEK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ET-eI-ypJ">
+                        <rect key="frame" x="69" y="8" width="130" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAO-7x-jAo">
+                        <rect key="frame" x="69" y="27" width="130" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="联系方式:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vn-4U-80M">
+                        <rect key="frame" x="8" y="56" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="自我简介:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btt-8q-O3C">
+                        <rect key="frame" x="8" y="76" width="76" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5V-G8-YAO">
+                        <rect key="frame" x="92" y="56" width="164" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2I-On-Dut">
+                        <rect key="frame" x="92" y="76" width="164" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-fq-NUW">
+                        <rect key="frame" x="266" y="96" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="42s-Fj-c8H"/>
+                            <constraint firstAttribute="height" constant="25" id="jnk-Hv-NuW"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="iagree.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zf-fE-nFl">
+                        <rect key="frame" x="210" y="96" width="46" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="KNt-5C-RTh"/>
+                            <constraint firstAttribute="width" constant="56" id="rPe-Ps-GSu"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="idisagree.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aJ-oJ-iIk">
+                        <rect key="frame" x="250" y="96" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1Vn-4U-80M" firstAttribute="baseline" secondItem="X5V-G8-YAO" secondAttribute="baseline" id="42Z-yf-x2l"/>
+                    <constraint firstItem="1Vn-4U-80M" firstAttribute="top" secondItem="eQ3-HI-kzH" secondAttribute="bottom" constant="5" id="5Cy-Ec-ueZ"/>
+                    <constraint firstItem="eVb-fq-NUW" firstAttribute="baseline" secondItem="3zf-fE-nFl" secondAttribute="baseline" id="A07-Y6-Mpk"/>
+                    <constraint firstItem="eVb-fq-NUW" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="15" id="BY1-xM-EyY"/>
+                    <constraint firstItem="SAO-7x-jAo" firstAttribute="leading" secondItem="3ET-eI-ypJ" secondAttribute="leading" id="Gh0-v5-uuD"/>
+                    <constraint firstItem="3ET-eI-ypJ" firstAttribute="leading" secondItem="eQ3-HI-kzH" secondAttribute="trailing" constant="20" id="JiK-kd-agl"/>
+                    <constraint firstItem="btt-8q-O3C" firstAttribute="baseline" secondItem="U2I-On-Dut" secondAttribute="baseline" id="MBu-p3-z6q"/>
+                    <constraint firstItem="7aJ-oJ-iIk" firstAttribute="top" secondItem="U2I-On-Dut" secondAttribute="bottom" id="RyV-Nl-6LE"/>
+                    <constraint firstItem="7aJ-oJ-iIk" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="5" id="Yhr-oz-wVC"/>
+                    <constraint firstItem="btt-8q-O3C" firstAttribute="top" secondItem="1Vn-4U-80M" secondAttribute="bottom" constant="5" id="dSx-yW-PAs"/>
+                    <constraint firstItem="7aJ-oJ-iIk" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="dg5-ej-TPC"/>
+                    <constraint firstItem="eQ3-HI-kzH" firstAttribute="leading" secondItem="1Vn-4U-80M" secondAttribute="leading" id="f7w-xG-RwI"/>
+                    <constraint firstItem="eQ3-HI-kzH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="ico-df-LoL"/>
+                    <constraint firstItem="eVb-fq-NUW" firstAttribute="baseline" secondItem="7aJ-oJ-iIk" secondAttribute="baseline" id="irU-3t-3q2"/>
+                    <constraint firstItem="U2I-On-Dut" firstAttribute="leading" secondItem="X5V-G8-YAO" secondAttribute="leading" id="lTg-q1-jMm"/>
+                    <constraint firstItem="eVb-fq-NUW" firstAttribute="leading" secondItem="3zf-fE-nFl" secondAttribute="trailing" constant="15" id="nHB-Vi-yKc"/>
+                    <constraint firstItem="eQ3-HI-kzH" firstAttribute="leading" secondItem="btt-8q-O3C" secondAttribute="leading" id="oco-Jv-Qh1"/>
+                    <constraint firstItem="eVb-fq-NUW" firstAttribute="baseline" secondItem="3zf-fE-nFl" secondAttribute="baseline" id="qUz-1w-lwK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkLabel" destination="7aJ-oJ-iIk" id="kGa-vX-LZO"/>
+                <outlet property="majorLabel" destination="SAO-7x-jAo" id="cyU-iL-Ygc"/>
+                <outlet property="phoneLabel" destination="X5V-G8-YAO" id="cv9-vH-XXe"/>
+                <outlet property="receptButton" destination="eVb-fq-NUW" id="Fig-rB-1Uu"/>
+                <outlet property="refuseButton" destination="3zf-fE-nFl" id="fxB-1p-5Gw"/>
+                <outlet property="summaryLabel" destination="U2I-On-Dut" id="wzS-FZ-S55"/>
+                <outlet property="titleLabel" destination="3ET-eI-ypJ" id="Efc-cl-HCl"/>
+            </connections>
+            <point key="canvasLocation" x="116" y="341"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iagree.png" width="200" height="120"/>
+        <image name="idisagree.png" width="200" height="120"/>
+        <image name="membe1.png" width="90" height="90"/>
+    </resources>
+</document>

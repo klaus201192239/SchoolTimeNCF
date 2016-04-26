@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoticeDetailViewController">
+            <connections>
+                <outlet property="contentLabel" destination="PZi-8F-BU8" id="dMN-sk-sYT"/>
+                <outlet property="publisherLabel" destination="99b-Kl-N63" id="Pmr-Om-J80"/>
+                <outlet property="timeLabel" destination="Sw3-cm-ZAt" id="R30-XF-RUW"/>
+                <outlet property="titleLabel" destination="APK-KV-liP" id="lxv-a9-hRl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APK-KV-liP" userLabel="Label">
+                    <rect key="frame" x="139" y="64" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="0.62" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZi-8F-BU8" userLabel="Label">
+                    <rect key="frame" x="105" y="138" width="110" height="56"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99b-Kl-N63" userLabel="Label">
+                    <rect key="frame" x="278" y="213" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="0.0" height="0.0"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sw3-cm-ZAt" userLabel="Label">
+                    <rect key="frame" x="278" y="97" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PZi-8F-BU8" firstAttribute="top" secondItem="Sw3-cm-ZAt" secondAttribute="bottom" constant="20" id="CTV-4T-frQ"/>
+                <constraint firstAttribute="trailing" secondItem="Sw3-cm-ZAt" secondAttribute="trailing" id="EMT-Lp-pDd"/>
+                <constraint firstAttribute="centerX" secondItem="APK-KV-liP" secondAttribute="centerX" id="F3u-bT-Wsf"/>
+                <constraint firstAttribute="trailing" secondItem="99b-Kl-N63" secondAttribute="trailing" id="MQs-Xx-7en"/>
+                <constraint firstItem="APK-KV-liP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="Rtv-wf-cE1"/>
+                <constraint firstItem="Sw3-cm-ZAt" firstAttribute="top" secondItem="APK-KV-liP" secondAttribute="bottom" constant="10" id="gQi-Bj-NVg"/>
+                <constraint firstAttribute="centerX" secondItem="PZi-8F-BU8" secondAttribute="centerX" id="ggy-c3-vw9"/>
+                <constraint firstItem="99b-Kl-N63" firstAttribute="top" secondItem="PZi-8F-BU8" secondAttribute="bottom" constant="30" id="mZu-zc-zFT"/>
+            </constraints>
+            <point key="canvasLocation" x="-20" y="311"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

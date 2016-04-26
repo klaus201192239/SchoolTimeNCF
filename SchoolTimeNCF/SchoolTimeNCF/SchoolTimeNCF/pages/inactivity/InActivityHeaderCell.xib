@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="106" id="KGk-i7-Jjw" customClass="InActivityHeaderCell">
+            <rect key="frame" x="0.0" y="1" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="showme.png" translatesAutoresizingMaskIntoConstraints="NO" id="fUy-UY-uWr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="105" id="2hE-3a-1j1"/>
+                            <constraint firstAttribute="width" constant="320" id="e4k-ra-A3U"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0hd-ht-nH3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" id="6Yd-FB-zbo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" constant="-8" id="8Kv-eN-Sfw"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Csd-de-Si7"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="J6F-W7-eSL"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="MB7-jx-kKK"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="N7i-Km-eKE"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QaX-fX-zHR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fUy-UY-uWr" secondAttribute="bottom" id="Rrc-I3-3D8"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="S9S-mF-dgt"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="UgJ-kg-CQR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" id="ZIc-TG-evG"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fUy-UY-uWr" secondAttribute="bottom" constant="-8" id="dg0-jp-P8V"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="dzn-cM-QPm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fUy-UY-uWr" secondAttribute="bottom" id="fOt-m5-eFC"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="gH8-IF-kn5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" constant="-8" id="hBU-5g-K8x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" id="ou4-YQ-VoE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="fUy-UY-uWr" secondAttribute="trailing" id="qtt-2U-55i"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fUy-UY-uWr" secondAttribute="bottom" id="rEt-w6-0QL"/>
+                    <constraint firstItem="fUy-UY-uWr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="uxG-sF-9WZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fUy-UY-uWr" secondAttribute="bottom" id="zRO-oJ-O6Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImg" destination="fUy-UY-uWr" id="hIb-0V-4jn"/>
+            </connections>
+            <point key="canvasLocation" x="363" y="291"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="showme.png" width="642" height="210"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
